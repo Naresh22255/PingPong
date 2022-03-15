@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Raleway:wght@300&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(92, 37, 15);
+  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+
+.box {
+  margin: 15px;
+  padding: 10px;
+}
+
+nav {
+  padding: 10px;
+  overflow: hidden;
+  background: #000;
+}
+
+h3 a {
+  padding: 10px;
+  border-radius: 25px;
+  margin: 20px;
+  overflow: hidden;
+  background: #000;
+}
+
+nav a {
+  display: inline-block;
+  background-color: black;
+}
+
+.paddle {
+  --position: 50;
+
+  position: absolute;
+  background-color: #fff;
+  top: calc(var(--position) * 1vh);
+  width: 1.4vh;
+  height: 18vh;
+  transform: translateY(-50%);
+}
+
+.paddle.left {
+  left: 0.5vw;
+}
+
+.paddle.right {
+  right: 0.5vw;
+}
+
+.ball {
+  --x: 50;
+  --y: 50;
+
+  position: absolute;
+  background-color: #fff;
+  left: calc(var(--x) * 1vh);
+  top: calc(var(--y) * 1vh);
+  width: 3vh;
+  height: 3vh;
+  border-radius: 50%;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  opacity: 0.3;
+}
+
+#player-score {
+  padding: 10px;
+}
+
+#computer-score {
+  padding: 10px;
+}
